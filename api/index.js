@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from'cors'
-import ProyectosApiRoute from '/routes/proyectos.api.routes.js'
+import ProyectosApiRoute from '../api/routes/proyectos.api.routes.js'
 
 const app = express();
 
