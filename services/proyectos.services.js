@@ -13,7 +13,7 @@ async function traerProyectos(filter){
 
     return client.connect()
     .then(async function(){
-        const db = client.db('Portfolio-MG-2023')
+        const db = client.db('Portfolio-2023-MG')
         return db.collection('Proyectos').find(filterQuery).toArray()
     })
 }
