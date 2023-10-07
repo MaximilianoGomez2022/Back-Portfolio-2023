@@ -14,7 +14,7 @@ async function traerProyectos(filter){
     return client.connect()
     .then(async function(){
         const db = client.db('Portfolio-2023-MG')
-        return db.collection('Proyectos').find(filterQuery).toArray()
+        return db.collection('Proyectos').find(filterQuery).sort({ calificacion: -1 }).toArray()
     })
 }
 
